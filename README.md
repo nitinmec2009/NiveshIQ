@@ -171,7 +171,7 @@ The production source code is maintained separately in a private repository.
 
 ---
 
-## Founder
+## CO-Founder
 
 **Sanskriti Garg**  
 DevOps + AI systems engineering background  
@@ -181,8 +181,8 @@ Building scalable pipelines, deployment automation, and production-ready infra.
 
 ## Contact
 
-- Email: your@email.com
-- LinkedIn: https://www.linkedin.com/in/yourprofile/
+- Email: sanskritigarg31@gmail.com
+- LinkedIn: https://www.linkedin.com/in/sanskriti-garg-0407
 
 ---
 
