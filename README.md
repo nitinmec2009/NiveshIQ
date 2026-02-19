@@ -69,7 +69,7 @@ NiveshIQ combines:
 
 ---
 
-## Product Screens (Add screenshots)
+## Product Screens
 
 Add screenshots in `/assets/screenshots/` and update the links below:
 
@@ -173,7 +173,10 @@ The production source code is maintained separately in a private repository.
 
 ---
 
-## CO-Founder
+## Founder/CO-Founder
+
+**Nitin Agarwal**  
+Investment Banking
 
 **Sanskriti Garg**  
 DevOps + AI systems engineering background  
