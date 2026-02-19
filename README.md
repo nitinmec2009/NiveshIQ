@@ -74,9 +74,11 @@ NiveshIQ combines:
 Add screenshots in `/assets/screenshots/` and update the links below:
 
 <p align="center">
-  <img src="assets/screenshots/global-pulse.png" width="30%" />
-  <img src="assets/screenshots/market-heatmap.png" width="30%" />
-  <img src="assets/screenshots/stock-page.png" width="30%" />
+  <img src="assets/screenshots/main_page.png" width="30%" />
+  <img src="assets/screenshots/market_heatmap_market_cap.png" width="30%" />
+  <img src="assets/screenshots/stock_comprehensive.png" width="30%" />
+  <img src="assets/screenshots/thematic_constituents.png" width="30%" />
+   <img src="assets/screenshots/watchlist_constituents details" width="30%" />
 </p>
 
 ---
