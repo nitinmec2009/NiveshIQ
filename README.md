@@ -68,6 +68,7 @@ NiveshIQ combines:
 <p align="center">
   <img src="assets/screenshots/stock_comprehensive.png" width="45%" />
   <img src="assets/screenshots/thematic_constituents.png" width="45%" />
+  <img src="assets/screenshots/*.png" width="45%" />
 </p>
 
 > Tip: If you create a short demo video (30–60s), add it here as a “Demo” link for AWS Activate reviewers.
