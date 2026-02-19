@@ -4,40 +4,40 @@
 
 # NiveshIQ — AI Market Intelligence for Indian Stocks (NSE)
 
-Turns real-time market news + price data into simplified explanations and **expected-move signals (1D/1W/1M)** for **retail investors and students**. :contentReference[oaicite:3]{index=3}
+Turns real-time market news + price data into simplified explanations and **expected-move signals (1D/1W/1M)** for **retail investors and students**.
 
-> **Disclaimer:** NiveshIQ is for educational purposes only and does not constitute investment advice. AI can make errors; users should use their discretion before trading or investing. :contentReference[oaicite:4]{index=4}
+> **Disclaimer:** NiveshIQ is for educational purposes only and does not constitute investment advice. AI can make errors; users should use their discretion before trading or investing.
 
 ---
 
 ## What is NiveshIQ?
 
-**NiveshIQ** is a market intelligence platform purpose-built for the **Indian stock market (NSE)**. It helps users answer: :contentReference[oaicite:5]{index=5}
+**NiveshIQ** is a market intelligence platform purpose-built for the **Indian stock market (NSE)**. It helps users answer:
 
 - **Why did this stock/sector move today?**
 - **What might move next — and why?**
 - **What is the expected move (1D/1W/1M) with confidence?**
 
-Instead of raw headlines, NiveshIQ produces **structured insights**, **impact classification**, and **easy-to-understand reasons**. :contentReference[oaicite:6]{index=6}
+Instead of raw headlines, NiveshIQ produces **structured insights**, **impact classification**, and **easy-to-understand reasons**.
 
 ---
 
 ## The Problem
 
-Retail investors often struggle to: :contentReference[oaicite:7]{index=7}
+Retail investors often struggle to:
 
 - Interpret financial news quickly  
 - Connect macro events (crude, USD/INR, yields) to sectors/stocks  
 - Understand whether a headline is **material** or noise  
 - Quantify possible impact and react in time  
 
-Most end up relying on social media tips, delayed analysis, or fragmented tools. :contentReference[oaicite:8]{index=8}
+Most end up relying on social media tips, delayed analysis, or fragmented tools.
 
 ---
 
 ## The Solution
 
-NiveshIQ combines: :contentReference[oaicite:9]{index=9}
+NiveshIQ combines:
 
 - **Real-time news ingestion** (RSS + headline sources)
 - **Fast sentiment scoring** (FinBERT)
@@ -49,13 +49,13 @@ NiveshIQ combines: :contentReference[oaicite:9]{index=9}
 
 ## Key Capabilities
 
-- Tracks **~750+ NSE stocks** (Nifty Total Market universe) :contentReference[oaicite:10]{index=10}  
-- Heatmaps across **sectors, market-cap, and themes** (42 indices) :contentReference[oaicite:11]{index=11}  
-- **High Impact dashboard**: top gainers/losers, expected movers, volume spikes :contentReference[oaicite:12]{index=12}  
-- **Stock deep-dive page**: news, signals, explanations, confidence :contentReference[oaicite:13]{index=13}  
-- Personal **watchlist** with alerts-ready structure :contentReference[oaicite:14]{index=14}  
-- AI market assistant chat for user questions :contentReference[oaicite:15]{index=15}  
-- Multi-language UI (11 Indian languages) :contentReference[oaicite:16]{index=16}  
+- Tracks **~750+ NSE stocks** (Nifty Total Market universe)  
+- Heatmaps across **sectors, market-cap, and themes** (42 indices)  
+- **High Impact dashboard**: top gainers/losers, expected movers, volume spikes  
+- **Stock deep-dive page**: news, signals, explanations, confidence  
+- Personal **watchlist** with alerts-ready structure  
+- AI market assistant chat for user questions  
+- Multi-language UI (11 Indian languages)  
 
 ---
 
@@ -78,18 +78,18 @@ NiveshIQ combines: :contentReference[oaicite:9]{index=9}
 
 ### Data + AI Pipeline
 
-1. **Ingest news** (RSS / headlines) and **deduplicate** :contentReference[oaicite:17]{index=17}  
-2. **FinBERT** scores sentiment (positive/neutral/negative) :contentReference[oaicite:18]{index=18}  
+1. **Ingest news** (RSS / headlines) and **deduplicate**  
+2. **FinBERT** scores sentiment (positive/neutral/negative)  
 3. **LLM** generates structured output:
    - symbols/entities  
    - topics  
    - impact level (high/medium/low)  
-   - short reasoning summary :contentReference[oaicite:19]{index=19}  
+   - short reasoning summary  
 4. Merge with market data and calculate:
    - trend + momentum  
    - sentiment windows  
-   - volatility normalization :contentReference[oaicite:20]{index=20}  
-5. Publish to dashboards/stock pages with caching for fast load :contentReference[oaicite:21]{index=21}  
+   - volatility normalization  
+5. Publish to dashboards/stock pages with caching for fast load  
 
 ### Performance Principle (for fast loading)
 - **AI and ingestion run in background jobs**
@@ -100,9 +100,9 @@ This avoids doing heavy AI work on page load.
 
 ## Expected Move (Model Summary)
 
-NiveshIQ uses a multi-factor model to estimate **expected move** and confidence. :contentReference[oaicite:22]{index=22}
+NiveshIQ uses a multi-factor model to estimate **expected move** and confidence.
 
-Example factors: :contentReference[oaicite:23]{index=23}
+Example factors:
 - Momentum  
 - Trend  
 - Short-term sentiment (24h)  
@@ -112,20 +112,20 @@ Example factors: :contentReference[oaicite:23]{index=23}
 Outputs are capped to avoid extreme values and are presented as:
 - **1D / 1W / 1M expected move**
 - **confidence**
-- **plain-English explanation** :contentReference[oaicite:24]{index=24}  
+- **plain-English explanation**
 
 ---
 
 ## Planned AWS Deployment (for AWS Activate)
 
-NiveshIQ needs scalable, reliable infrastructure for: :contentReference[oaicite:25]{index=25}  
+NiveshIQ needs scalable, reliable infrastructure for:
 - Continuous ingestion + scheduled pipelines  
 - AI processing workloads (batch + near-real-time)  
 - Low-latency APIs for web and mobile  
 - Secure user authentication and data storage  
 - Monitoring and cost control  
 
-### AWS Services (Planned) :contentReference[oaicite:26]{index=26}
+### AWS Services (Planned)
 - **Amazon ECS (or EC2)** — API + worker services  
 - **Amazon RDS (PostgreSQL)** — production DB for news, tags, rollups, users  
 - **Amazon ElastiCache (Redis)** — caching hot endpoints (heatmaps, stock pages)  
@@ -143,26 +143,26 @@ NiveshIQ needs scalable, reliable infrastructure for: :contentReference[oaicite:
 
 ## Current Stage
 
-- Prototype and core pipelines implemented (news ingestion + AI tagging + dashboards) :contentReference[oaicite:27]{index=27}  
-- Web dashboard working in development :contentReference[oaicite:28]{index=28}  
-- Mobile app in progress :contentReference[oaicite:29]{index=29}  
-- Preparing for beta launch and early user onboarding :contentReference[oaicite:30]{index=30}  
+- Prototype and core pipelines implemented (news ingestion + AI tagging + dashboards)  
+- Web dashboard working in development  
+- Mobile app in progress  
+- Preparing for beta launch and early user onboarding  
 
 ---
 
 ## Roadmap
 
 ### Near-term (0–2 months)
-- Portfolio tracking and P&L analytics :contentReference[oaicite:31]{index=31}  
-- Better onboarding and personalization :contentReference[oaicite:32]{index=32}  
-- Push notifications for watchlist (news + signal triggers) :contentReference[oaicite:33]{index=33}  
+- Portfolio tracking and P&L analytics  
+- Better onboarding and personalization  
+- Push notifications for watchlist (news + signal triggers)  
 - Improve caching + precomputed rollups for faster stock/global pulse pages
 
 ### Next (2–4 months)
-- Real-time price updates (WebSockets) :contentReference[oaicite:34]{index=34}  
-- Options / implied volatility overlays :contentReference[oaicite:35]{index=35}  
-- Broker integrations (order-routing optional) :contentReference[oaicite:36]{index=36}  
-- Backtesting + model calibration :contentReference[oaicite:37]{index=37}  
+- Real-time price updates (WebSockets)  
+- Options / implied volatility overlays  
+- Broker integrations (order-routing optional)  
+- Backtesting + model calibration  
 
 ---
 
@@ -193,19 +193,19 @@ Goal: make NiveshIQ a **financial social app** where users learn markets through
 
 ## Repository Note (Public README)
 
-This repository is a **public product overview** for demos, architecture, and AWS Activate evaluation. :contentReference[oaicite:38]{index=38}  
-The production source code is maintained separately in a private repository. :contentReference[oaicite:39]{index=39}  
+This repository is a **public product overview** for demos, architecture, and AWS Activate evaluation.  
+The production source code is maintained separately in a private repository.
 
 ---
 
 ## Founder / Co-Founder
 
-- **Nitin Agarwal** — Investment Banking :contentReference[oaicite:40]{index=40}  
-- **Sanskriti Garg** — DevOps + AI systems engineering; scalable pipelines, deployment automation, production-ready infra :contentReference[oaicite:41]{index=41}  
+- **Nitin Agarwal** — Investment Banking  
+- **Sanskriti Garg** — DevOps + AI systems engineering; scalable pipelines, deployment automation, production-ready infra  
 
 ---
 
 ## Contact
 
-- Email: sanskritigarg31@gmail.com :contentReference[oaicite:42]{index=42}  
-- LinkedIn: https://www.linkedin.com/in/sanskriti-garg-0407 :contentReference[oaicite:43]{index=43}  
+- Email: sanskritigarg31@gmail.com  
+- LinkedIn: https://www.linkedin.com/in/sanskriti-garg-0407  
