@@ -166,7 +166,7 @@ NiveshIQ needs scalable, reliable infrastructure for:
 
 ---
 
-## Community Roadmap: Reddit-style Financial Social Feed
+## Community Roadmap: Financial Social Feed
 
 Goal: make NiveshIQ a **financial social app** where users learn markets through **news-driven discussions, memes, and short videos** — targeting **retail investors + students**.
 
